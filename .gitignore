@@ -16,6 +16,9 @@ __pycache__/
 # C extensions
 *.so
 
+.idea
+dickens
+
 # Distribution / packaging
 .Python
 build/
@@ -181,3 +184,4 @@ pyrightconfig.json
 
 # End of https://www.toptal.com/developers/gitignore/api/python
 
+entity_extraction.json

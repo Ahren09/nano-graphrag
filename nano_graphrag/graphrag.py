@@ -89,7 +89,6 @@ class GraphRAG:
             "dimensions": 1536,
             "num_walks": 10,
             "walk_length": 40,
-            "num_walks": 10,
             "window_size": 2,
             "iterations": 3,
             "random_seed": 3,
@@ -308,7 +307,7 @@ class GraphRAG:
             logger.info("[Entity Extraction]...")
             maybe_new_kg = await self.entity_extraction_func(
                 inserting_chunks,
-                knwoledge_graph_inst=self.chunk_entity_relation_graph,
+                knowledge_graph_inst=self.chunk_entity_relation_graph,
                 entity_vdb=self.entities_vdb,
                 global_config=asdict(self),
                 using_amazon_bedrock=self.using_amazon_bedrock,

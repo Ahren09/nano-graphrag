@@ -24,7 +24,9 @@ global_amazon_bedrock_async_client = None
 def get_openai_async_client_instance():
     global global_openai_async_client
     if global_openai_async_client is None:
-        global_openai_async_client = AsyncOpenAI()
+
+        global_openai_async_client = AsyncAzureOpenAI()
+        # global_openai_async_client = AsyncOpenAI()
     return global_openai_async_client
 
 
